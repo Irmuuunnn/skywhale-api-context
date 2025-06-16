@@ -1,6 +1,6 @@
 {
     "name": "skywhale-api",
-    "version": "1.0.5",
+    "version": "1.0.7",
     "description": "for admin developing",
     "main": "dist/index.js",
     "module": "dist/index.esm.js",
@@ -23,7 +23,7 @@
         "api",
         "context"
     ],
-    "author": "Your Actual Name",
+    "author": "Irmuun",
     "license": "MIT",
     "peerDependencies": {
         "react": ">=16.8.0",
@@ -40,10 +40,10 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/yourusername/skywhale-api.git"
+        "url": "https://github.com/Irmuuunnn/skywhale-api.git"
     },
     "bugs": {
-        "url": "https://github.com/yourusername/skywhale-api/issues"
+        "url": "https://github.com/Irmuuunnn/skywhale-api/issues"
     },
-    "homepage": "https://github.com/yourusername/skywhale-api#readme"
+    "homepage": "https://github.com/Irmuuunnn/skywhale-api#readme"
 }
