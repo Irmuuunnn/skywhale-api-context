@@ -1,9 +1,10 @@
 {
-    "extends": "./tsconfig.json",
-    "compilerOptions": {
-      "module": "esnext",
-      "outDir": "dist",
-      "emitDeclarationOnly": true,
-      "declaration": true
-    }
-  }
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "outDir": "dist"
+  },
+  "include": ["src/**/*"],
+  "exclude": ["**/*.test.*", "**/*.spec.*"]
+}

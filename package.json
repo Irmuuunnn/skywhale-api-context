@@ -1,16 +1,10 @@
 {
     "name": "skywhale-api",
-    "version": "1.0.3",
+    "version": "1.0.5",
     "description": "for admin developing",
     "main": "dist/index.js",
     "module": "dist/index.esm.js",
     "types": "dist/index.d.ts",
-    "exports": {
-        ".": {
-        "import": "./dist/index.mjs",
-        "require": "./dist/index.js"
-        }
-    },
     "files": [
         "dist"
     ],
@@ -29,7 +23,7 @@
         "api",
         "context"
     ],
-    "author": "Your Name",
+    "author": "Your Actual Name",
     "license": "MIT",
     "peerDependencies": {
         "react": ">=16.8.0",
@@ -39,16 +33,17 @@
         "axios": "^1.6.0"
     },
     "devDependencies": {
+        "@types/node": "^20.0.0",
         "@types/react": "^18.2.0",
         "typescript": "^5.0.0",
         "rimraf": "^5.0.0"
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/yourusername/react-global-state-manager.git"
+        "url": "https://github.com/yourusername/skywhale-api.git"
     },
     "bugs": {
-        "url": "https://github.com/yourusername/react-global-state-manager/issues"
+        "url": "https://github.com/yourusername/skywhale-api/issues"
     },
-    "homepage": "https://github.com/yourusername/react-global-state-manager#readme"
+    "homepage": "https://github.com/yourusername/skywhale-api#readme"
 }

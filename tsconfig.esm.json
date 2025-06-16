@@ -1,8 +1,11 @@
+// tsconfig.esm.json
 {
-    "extends": "./tsconfig.json",
-    "compilerOptions": {
-      "module": "esnext",
-      "outDir": "dist/esm",
-      "declaration": false
-    }
-  }
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "module": "ES2020",
+    "outDir": "dist",
+    "declaration": false
+  },
+  "include": ["src/**/*"],
+  "exclude": ["**/*.test.*", "**/*.spec.*"]
+}

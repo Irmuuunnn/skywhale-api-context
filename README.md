@@ -1,17 +1,28 @@
-<!-- React Global State Manager
+# Skywhale API
+
 A TypeScript React global state management library with API request handling.
-Installation
-bash
-npm install react-global-state-manager
-Peer Dependencies
+
+## Installation
+
+```bash
+npm install skywhale-api
+```
+
+## Peer Dependencies
+
 Make sure you have these installed in your project:
-bash
+
+```bash
 npm install react antd
-Usage
-Basic Setup
-tsx
+```
+
+## Usage
+
+### Basic Setup
+
+```tsx
 import React from 'react';
-import { GlobalProvider, useGlobalContext } from 'react-global-state-manager';
+import { GlobalProvider, useGlobalContext } from 'skywhale-api';
 
 function App() {
   return (
@@ -52,20 +63,29 @@ function YourComponent() {
     </div>
   );
 }
-API Reference
-GlobalProvider Props
-apiUrl?: string - Base API URL for requests
-initialState?: Partial<GlobalState> - Initial state configuration
-children: React.ReactNode - Child components
-useGlobalContext Hook
+```
+
+## API Reference
+
+### GlobalProvider Props
+
+- `apiUrl?: string` - Base API URL for requests
+- `initialState?: Partial<GlobalState>` - Initial state configuration
+- `children: React.ReactNode` - Child components
+
+### useGlobalContext Hook
+
 Returns an object with:
-request(params: RequestParams) - Make API requests
-setlogin(login: UserInfo) - Set user login state
-notification(params: NotificationParams) - Show notifications
-setModel(params: SetModelParams) - Set model data
-All state properties
-Request Parameters
-typescript
+
+- `request(params: RequestParams)` - Make API requests
+- `setlogin(login: UserInfo)` - Set user login state
+- `notification(params: NotificationParams)` - Show notifications
+- `setModel(params: SetModelParams)` - Set model data
+- All state properties
+
+### Request Parameters
+
+```typescript
 interface RequestParams {
   url: string;
   model?: string;
@@ -77,8 +97,13 @@ interface RequestParams {
   API?: string;
   nopagination?: boolean;
 }
-File Upload Example
-tsx
+```
+
+## Examples
+
+### File Upload Example
+
+```tsx
 const handleFileUpload = async (file: File) => {
   const formData = {
     file: file,
@@ -93,8 +118,11 @@ const handleFileUpload = async (file: File) => {
     model: 'upload'
   });
 };
-Login Example
-tsx
+```
+
+### Login Example
+
+```tsx
 const handleLogin = async (credentials: { email: string; password: string }) => {
   const response = await request({
     url: '/auth/login',
@@ -113,14 +141,19 @@ const handleLogin = async (credentials: { email: string; password: string }) => 
     localStorage.setItem('token', response.token);
   }
 };
-Features
-TypeScript support
-Automatic request/response state management
-Built-in loading states
-Error handling
-File upload support
-Antd notification integration
-localStorage token management
-Automatic pagination parameter handling
-License
-MIT -->
+```
+
+## Features
+
+- ✅ TypeScript support
+- ✅ Automatic request/response state management
+- ✅ Built-in loading states
+- ✅ Error handling
+- ✅ File upload support
+- ✅ Antd notification integration
+- ✅ localStorage token management
+- ✅ Automatic pagination parameter handling
+
+## License
+
+MIT
